@@ -1,0 +1,14 @@
+{
+    "posts": [
+        {
+            "title": "First Post",
+            "Content": "This is the first post made by Deodate",
+            "id": "74e2"
+        },
+        {
+            "title": "First Post",
+            "Content": "This is the first post made by Deodate",
+            "id": "8412"
+        }
+    ]
+}
