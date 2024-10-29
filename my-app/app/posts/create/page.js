@@ -23,7 +23,7 @@ const Create = () => {
     return (
         <div className="flex flex-col items-center py-20">
             <h1 className="text-3xl font-bold mb-6">Create New Post</h1>
-            <form onSubmit={handleSubmit} className="flex flex-col space-y-4 mt-6 border p-6 w-96 bg-white shadow-md rounded-md">
+            <form onSubmit={handleSubmit} className="flex flex-col space-y-4 mt-6 border p-6">
                 <input
                     type="text"
                     placeholder="Title"
@@ -39,8 +39,8 @@ const Create = () => {
                     className="p-2 border border-gray-300 rounded h-24"
                     required
                 />
-                <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-                    Submit
+                <button className='w-full bg-green-300 py-1.5'>
+                    Create Post
                 </button>
             </form>
         </div>
