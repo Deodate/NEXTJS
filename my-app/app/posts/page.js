@@ -37,18 +37,18 @@ export default function Posts() {
                             <td className="px-6 py-4 text-gray-700">{post.id}</td>
                             <td className="px-6 py-4 text-gray-700">{post.title}</td>
                             <td className="px-6 py-4 text-gray-700">{post.content}</td>
-                            <td className="px-6 py-4">
-                                <div className="flex space-x-2">
-                                    <button className="px-3 py-1 text-white bg-blue-500 rounded hover:bg-blue-600">
+                            <td className='space-x-4 px-6 py-3 text-end'>
+                             
+                                    <button className='text-blue-600'>
                                         Read
                                     </button>
-                                    <button className="px-3 py-1 text-white bg-yellow-500 rounded hover:bg-yellow-600">
+                                    <button className='text-blue-600'>
                                         Edit
                                     </button>
-                                    <button className="px-3 py-1 text-white bg-red-500 rounded hover:bg-red-600">
+                                    <button className='text-blue-600'>
                                         Delete
                                     </button>
-                                </div>
+                               
                             </td>
                         </tr>
                     ))}
