@@ -1,11 +1,50 @@
-
-import React from "react"
+"use client";
+import React, { useState } from "react";
+import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const Create = () => {
-    return(
-        <div>page</div>
-    )
-        
-}
+    const [title, setTitle] = useState("");
+    const [content, setContent] = useState("");
+    const router = useRouter();
 
-export default Create
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            await axios.post("http://localhost:5000/posts", { title, content });
+            // Redirect to posts page or show success message
+            router.push("/");
+        } catch (error) {
+            console.error("Error creating post:", error);
+        }
+    };
+
+    return (
+        <div className="flex flex-col items-center py-20">
+            <h1 className="text-3xl font-bold mb-6">Create New Post</h1>
+            <form onSubmit={handleSubmit} className="flex flex-col space-y-4 mt-6 border p-6 w-96 bg-white shadow-md rounded-md">
+                <input
+                    type="text"
+                    placeholder="Title"
+                    value={title}
+                    onChange={(e) => setTitle(e.target.value)}
+                    className="p-2 border border-gray-300 rounded"
+                    required
+                />
+                <textarea
+                    placeholder="Content"
+                    value={content}
+                    onChange={(e) => setContent(e.target.value)}
+                    className="p-2 border border-gray-300 rounded h-24"
+                    required
+                />
+                <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                    Submit
+                </button>
+            </form>
+        </div>
+    );
+};
+
+export default Create;
