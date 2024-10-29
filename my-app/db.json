@@ -1,14 +1,24 @@
 {
-    "posts": [
-        {
-            "title": "First Post",
-            "Content": "This is the first post made by Deodate",
-            "id": "74e2"
-        },
-        {
-            "title": "First Post",
-            "Content": "This is the first post made by Deodate",
-            "id": "8412"
-        }
-    ]
+  "posts": [
+    {
+      "title": "First Post",
+      "Content": "This is the first post made by Deodate",
+      "id": "74e2"
+    },
+    {
+      "title": "First Post",
+      "Content": "This is the first post made by Deodate",
+      "id": "8412"
+    },
+    {
+      "id": "336c",
+      "title": "Kigali",
+      "content": "Rwanda, News information"
+    },
+    {
+      "id": "c9b7",
+      "title": "Nyarugenge ",
+      "content": "Gasabo, Nyamurere KK323"
+    }
+  ]
 }
