@@ -39,7 +39,7 @@ export default function Posts() {
                             <td className="px-6 py-4 text-gray-700">{post.content}</td>
                             <td className='space-x-4 px-6 py-3 text-end'>
                              
-                                  <Link href={'/posts/${post.id}'}><button className='text-blue-600'>
+                                  <Link href={`/posts/${post.id}`}><button className='text-blue-600'>
                                         Reads
                                     </button></Link>  
                                     <button className='text-blue-600'>

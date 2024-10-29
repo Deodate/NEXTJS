@@ -5,6 +5,8 @@ import { useEffect } from "react";
 export default function ({ params }) {
     const id = params.id;
 
+    const [post,setPosts] = useState(null)
+
     useEffect(() => {
         if (id) {
             fetchPost()
@@ -22,8 +24,12 @@ export default function ({ params }) {
                     <h3>{post.title}</h3>
                     <p>{post.content}</p>
                 </div>
-
             )}
+            <div>
+                <button>Home</button>
+                <button>Edit</button>
+                <button>Delete</button>
+            </div>
 
 
         </div>
