@@ -17,18 +17,18 @@ export default function Posts() {
     return (
         <div className="px-48 py-20">
             <div className="flex justify-between mb-8">
-                <h1 className="text-3xl font-bold">Register Now</h1>
-                <Link href="/posts/create" className="px-4 py-2 bg-green-500 rounded text-white">
+                <h1 className="text-2xl font-bold">Register Now</h1>
+                <Link href="/posts/create" className="px-2 py-2 bg-green-500 rounded text-white">
                     Create New One
                 </Link>
             </div>
             <table className="min-w-full bg-white border border-gray-200 rounded-lg shadow-md">
                 <thead className="bg-gray-100">
                     <tr>
-                        <th scope="col" className="px-6 py-3 text-left font-medium text-gray-600 uppercase">ID</th>
-                        <th scope="col" className="px-6 py-3 text-left font-medium text-gray-600 uppercase">Title</th>
-                        <th scope="col" className="px-6 py-3 text-left font-medium text-gray-600 uppercase">Contents</th>
-                        <th scope="col" className="px-6 py-3 text-left font-medium text-gray-600 uppercase">Action</th>
+                        <th scope="col" className="px-6 py-2 text-left font-medium text-gray-600 uppercase">ID</th>
+                        <th scope="col" className="px-6 py-2 text-left font-medium text-gray-600 uppercase">Title</th>
+                        <th scope="col" className="px-6 py-2 text-left font-medium text-gray-600 uppercase">Contents</th>
+                        <th scope="col" className="px-12 py-2 text-left font-medium text-gray-600 uppercase">Action</th>
                     </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
